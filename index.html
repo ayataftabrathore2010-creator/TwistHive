@@ -25,8 +25,32 @@
             Order Now
         </button>
     </nav>
-</header>- YOUR CONTENT HERE -->
+</header>
+<!-- ORDER MODAL -->
+<div id="contactModal" class="modal">
+    <div class="modal-content">
 
+        <span class="close" onclick="closeModal()">&times;</span>
+
+        <h2>Place Your Order</h2>
+
+        <input type="text" placeholder="Your Name">
+        <input type="text" placeholder="Product Name">
+        <input type="text" placeholder="Address">
+
+        <button type="submit">Submit Order</button>
+
+    </div>
+</div>
+<script>
+function openModal() {
+    document.getElementById("contactModal").style.display = "block";
+}
+
+function closeModal() {
+    document.getElementById("contactModal").style.display = "none";
+}
+</script>    
 </body>
 
 </html>
@@ -42,12 +66,16 @@
 
 <body>
 
-    <!-- ===== HERO SECT<section id="collectionsSection">
+ <section id="collectionsSection">
     <h2>Collections</h2>
 </section>
 
 <section id="featuresSection">
     <h2>Features</h2>
+</section>
+
+<section id="contactSection">
+    <h2>Contact</h2>
 </section>
 
 <section id="contactSection">
@@ -74,7 +102,17 @@
             </div>
         </div>
     </section>
+<div id="contactModal" class="modal">
+    <div class="modal-content">
+        <span onclick="closeModal()" class="close">&times;</span>
 
+        <h2>Place Order</h2>
+
+        <input type="text" placeholder="Your Name">
+        <input type="text" placeholder="Product Name">
+        <button>Submit</button>
+    </div>
+</div>
 </body>
     <!-- ===== ABOUT SECTION ===== -->
     <section class="about">
