@@ -1,423 +1,353 @@
-<!DOCTYPE html>
+!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>TwistHive - Handmade Crochet Creations</title>
-
-    <link rel="icon" type="image/png" href="./favicon.png">
-    <link rel="stylesheet" href="style.css">
+    <title>TwistHive - Handcrafted Crochet & Memories</title>
+    <meta name="description" content="TwistHive: Premium handmade crochet creations. Plushies, flowers, keychains & custom gifts. Every stitch carries a story.">
+    <meta name="keywords" content="handmade crochet, crochet plushies, amigurumi, crochet gifts, custom crochet, crochet flowers, crochet keychains, handmade gifts, crochet Pakistan, artisan crochet creations">
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-
-    <!-<header>
-    <a href="#" class="logo">🧶 TwistHive</a>
-
-    <nav>
-        <a href="#collectionsSection">Collections</a>
-        <a href="#featuresSection">Features</a>
-        <a href="#contactSection">Contact</a>
-
-        <button class="nav-btn" onclick="openModal()">
-            Order Now
-        </button>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <svg class="logo-svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="50" cy="50" r="48" fill="none" stroke="#AAB59A" stroke-width="2"/>
+                    <circle cx="50" cy="50" r="40" fill="#F8F3EC"/>
+                    <path d="M 35 50 Q 50 35 65 50 Q 50 65 35 50" fill="#AAB59A" opacity="0.3"/>
+                    <circle cx="40" cy="45" r="3" fill="#D4A24C"/>
+                    <circle cx="60" cy="45" r="3" fill="#D4A24C"/>
+                    <circle cx="50" cy="60" r="3" fill="#EBCBC0"/>
+                    <text x="50" y="78" font-size="10" font-weight="bold" text-anchor="middle" fill="#AAB59A">TwistHive</text>
+                </svg>
+                <span class="logo-text">TwistHive</span>
+            </div>
+            <button class="menu-toggle" id="menuToggle">☰</button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#collections" class="nav-link">Collections</a></li>
+                <li><a href="#custom-orders" class="nav-link">Custom Orders</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
     </nav>
-</header>
-<!-- ORDER MODAL -->
-<div id="contactModal" class="modal">
-    <div class="modal-content">
 
-        <span class="close" onclick="closeModal()">&times;</span>
-
-        <h2>Place Your Order</h2>
-
-        <input type="text" placeholder="Your Name">
-        <input type="text" placeholder="Product Name">
-        <input type="text" placeholder="Address">
-
-        <button type="submit">Submit Order</button>
-
-    </div>
-</div>
-<script>
-function openModal() {
-    document.getElementById("contactModal").style.display = "block";
-}
-
-function closeModal() {
-    document.getElementById("contactModal").style.display = "none";
-}
-</script>    
-</body>
-
-</html>
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>TwistHive - Handmade Crochet Creations</title>
-
-    <link rel="icon" type="image/png" href="./favicon.png">
-    <link rel="stylesheet" href="style.css">
-</head>
-
-<body>
-
- <section id="collectionsSection">
-    <h2>Collections</h2>
-</section>
-
-<section id="featuresSection">
-    <h2>Features</h2>
-</section>
-
-<section id="contactSection">
-    <h2>Contact</h2>
-</section>
-
-<section id="contactSection">
-    <h2>Contact</h2>
-</section>ION ===== -->
-    <section class="hero">
+    <!-- Hero Section -->
+    <section class="hero" id="home">
         <div class="hero-content">
-            <h1>Handcrafted Memories, Woven One Stitch at a Time</h1>
+            <div class="hero-text">
+                <h1 class="hero-title">Handcrafted Memories, Woven One Stitch at a Time</h1>
+                <p class="hero-subtitle">
+                    At TwistHive, every stitch carries a story. Our handmade crochet creations are thoughtfully crafted with love, creativity, and perfection to bring warmth, joy, and unforgettable memories into your life.
+                </p>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary" onclick="document.getElementById('collections').scrollIntoView({ behavior: 'smooth' })">Explore Collection</button>
+                    <button class="btn btn-secondary" onclick="document.getElementById('custom-orders').scrollIntoView({ behavior: 'smooth' })">Custom Orders</button>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="hero-placeholder">
+                    <svg viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" style="stop-color:#D4A24C;stop-opacity:0.2" />
+                                <stop offset="100%" style="stop-color:#EBCBC0;stop-opacity:0.2" />
+                            </linearGradient>
+                        </defs>
+                        <circle cx="150" cy="150" r="140" fill="url(#grad1)" stroke="#AAB59A" stroke-width="2"/>
+                        <circle cx="150" cy="80" r="20" fill="#AAB59A" opacity="0.6"/>
+                        <circle cx="100" cy="120" r="15" fill="#EBCBC0" opacity="0.6"/>
+                        <circle cx="200" cy="130" r="18" fill="#D4A24C" opacity="0.5"/>
+                        <circle cx="80" cy="180" r="25" fill="#AAB59A" opacity="0.4"/>
+                        <circle cx="220" cy="200" r="22" fill="#EBCBC0" opacity="0.5"/>
+                        <text x="150" y="260" font-size="14" text-anchor="middle" fill="#AAB59A">✨ Crochet Creations ✨</text>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </section>
 
-            <p>
-                At TwistHive, every stitch carries a story. Our handmade crochet creations are thoughtfully crafted with love, creativity, and perfection to bring warmth, joy, and unforgettable memories into your life.
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <h2 class="section-title">Where Creativity Meets Craftsmanship</h2>
+            <p class="about-text">
+                TwistHive was born from a passion for crochet and a love for creating meaningful handmade treasures. Every product is carefully crafted by hand, transforming simple yarn into unique pieces filled with character, warmth, and emotion. Each creation tells a story, carries memories, and brings joy to those who receive it.
             </p>
-
-            <div class="hero-buttons">
-                <button class="btn btn-primary"
-                    onclick="document.getElementById('collectionsSection').scrollIntoView()">
-                    Explore Collection
-                </button>
-
-                <button class="btn btn-secondary"
-                    onclick="document.getElementById('contactModal').style.display='block'">
-                    Custom Orders
-                </button>
-            </div>
-        </div>
-    </section>
-<div id="contactModal" class="modal">
-    <div class="modal-content">
-        <span onclick="closeModal()" class="close">&times;</span>
-
-        <h2>Place Order</h2>
-
-        <input type="text" placeholder="Your Name">
-        <input type="text" placeholder="Product Name">
-        <button>Submit</button>
-    </div>
-</div>
-</body>
-    <!-- ===== ABOUT SECTION ===== -->
-    <section class="about">
-        <h2 class="section-title">Where Creativity Meets Craftsmanship</h2>
-        <p class="section-subtitle">Discover the heart of TwistHive</p>
-        
-        <div class="about-content">
-            <div class="about-text">
-                <h3>Our Story</h3>
-                <p>TwistHive was born from a passion for crochet and a love for creating meaningful handmade treasures. Every product is carefully crafted by hand, transforming simple yarn into unique pieces filled with character, warmth, and emotion.</p>
-                <p>We believe that handmade items carry a special magic—each stitch is a moment of love, each design a reflection of creativity. At TwistHive, we're not just making crochet; we're creating memories that last a lifetime.</p>
-                
-                <div class="about-features">
-                    <div class="feature-item">
-                        <div class="emoji">✨</div>
-                        <h4>100% Handmade</h4>
-                        <p>Every piece crafted with precision</p>
-                    </div>
-                    <div class="feature-item">
-                        <div class="emoji">🧶</div>
-                        <h4>Premium Quality</h4>
-                        <p>Only finest materials used</p>
-                    </div>
-                    <div class="feature-item">
-                        <div class="emoji">💝</div>
-                        <h4>Made with Love</h4>
-                        <p>Stitched with care and passion</p>
-                    </div>
-                    <div class="feature-item">
-                        <div class="emoji">🎁</div>
-                        <h4>Perfect for Gifting</h4>
-                        <p>Thoughtfully packaged treasures</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="about-image">
-                <img src="https://i.pinimg.com/736x/07/45/d4/0745d4105e13836de0e16665f3856b9a.jpg" alt="Handmade crochet plushies">
-            </div>
-        </div>
-    </section>
-
-    <!-- ===== COLLECTIONS SECTION ===== -->
-    <section class="collections" id="collectionsSection">
-        <h2 class="section-title">Bloom & Cozy Collection</h2>
-        <p class="section-subtitle">A celebration of handmade artistry, where every stitch carries a memory and every creation is crafted with love. Inspired by blooming gardens, warm afternoons, and treasured moments.</p>
-        
-        <div class="collections-grid" id="collections">
-            <!-- Collections will be generated by JavaScript -->
-        </div>
-    </section>
-
-    <!-- ===== FEATURES SECTION ===== -->
-    <section class="features" id="features">
-        <h2 class="section-title">Why Choose TwistHive?</h2>
-        <p class="section-subtitle">Exceptional craftsmanship meets heartfelt artistry</p>
-        
-        <div class="features-grid">
-            <div class="feature-card">
-                <span class="large-emoji">✨</span>
-                <h4>100% Handmade</h4>
-                <p>Each piece is meticulously crafted by hand with dedication and love</p>
-            </div>
-            <div class="feature-card">
-                <span class="large-emoji">🧶</span>
-                <h4>Premium Quality Materials</h4>
-                <p>We use only the finest, softest, and most durable yarns available</p>
-            </div>
-            <div class="feature-card">
-                <span class="large-emoji">💝</span>
-                <h4>Made with Love & Care</h4>
-                <p>Every stitch is imbued with passion, care, and artistic vision</p>
-            </div>
-            <div class="feature-card">
-                <span class="large-emoji">🎁</span>
-                <h4>Perfect for Gifting</h4>
-                <p>Unique, memorable gifts that show you care about the recipient</p>
-            </div>
-            <div class="feature-card">
-                <span class="large-emoji">🌍</span>
-                <h4>Deliver All Over Karachi</h4>
-                <p>Fast and safe delivery to your doorstep in Karachi</p>
-            </div>
-            <div class="feature-card">
-                <span class="large-emoji">⭐</span>
-                <h4>Unique Custom Orders</h4>
-                <p>We create bespoke designs tailored to your imagination</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- ===== CONTACT SECTION ===== -->
-    <section class="contact" id="contact">
-        <div class="contact-content">
-            <div class="contact-info">
-                <h3>Contact TwistHive 🧶</h3>
-                <p><strong>We'd Love to Hear From You</strong></p>
-                <p>Have a question, a custom crochet idea, or want to place an order? We're always excited to connect with fellow crochet lovers and help bring your ideas to life.</p>
-
-                <div class="contact-item">
-                    <strong>📧 Email</strong>
-                    <p><a href="mailto:ayataftabrathore2010@gmail.com">ayataftabrathore2010@gmail.com</a></p>
-                </div>
-
-                <div class="contact-item">
-                    <strong>📸 Instagram</strong>
-                    <p><a href="https://instagram.com/TwistHive" target="_blank">@TwistHive</a></p>
-                </div>
-
-                <div class="contact-item">
-                    <strong>📍 Location</strong>
-                    <p>Karachi, Pakistan</p>
-                </div>
-            </div>
-
-            <div class="custom-orders">
-                <h4>🎨 Custom Orders</h4>
-                <p>Looking for something unique? TwistHive offers custom crochet creations made especially for you.</p>
-                <p><strong>Please Include:</strong></p>
-                <ul>
-                    <li>Product type (plushie, flower bouquet, keychain, etc.)</li>
-                    <li>Preferred colors</li>
-                    <li>Size requirements</li>
-                    <li>Inspiration photos (optional)</li>
-                    <li>Any special details you'd like included</li>
-                </ul>
-                <p style="margin-top: 1.5rem; font-size: 0.9rem; color: var(--light-text);">We will review your request and get back to you with pricing and estimated completion time.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- ===== FOOTER ===== -->
-    <footer>
-        <div class="footer-content">
-            <div class="footer-tagline">Creating beautiful memories, one stitch at a time 🧶</div>
-            <p class="footer-quote">Thank you for supporting handmade artistry.</p>
-            <p class="footer-quote"><em>"Every stitch tells a story, and every creation carries a little piece of love." — TwistHive 🐝💛</em></p>
-        </div>
-        <div class="footer-divider"></div>
-        <div class="footer-bottom">
-            <p>&copy; 2024 TwistHive. All rights reserved. Handmade with ❤️ in Karachi, Pakistan.</p>
-        </div>
-    </footer>
-
-    <!-- ===== COLLECTION DETAILS MODAL ===== -->
-    <div id="collectionModal" class="modal">
-        <div class="modal-content">
-            <span class="close-btn" onclick="document.getElementById('collectionModal').style.display='none'">&times;</span>
-            <div class="modal-body" id="modalBody">
-                <!-- Modal content will be generated by JavaScript -->
-            </div>
-        </div>
-    </div>
-
-    <!-- ===== CONTACT FORM MODAL ===== -->
-    <div id="contactModal" class="modal">
-        <div class="modal-content">
-            <span class="close-btn" onclick="document.getElementById('contactModal').style.display='none'">&times;</span>
-            <h2>Get in Touch 🧶</h2>
-            <p style="color: var(--light-text); margin-bottom: 1.5rem;">Have a custom request? Want to place an order? Reach out to us below!</p>
             
-            <form id="contactForm" style="display: flex; flex-direction: column; gap: 1rem;">
-                <input type="text" placeholder="Your Name" required style="padding: 0.8rem; border: 2px solid var(--warm-beige); border-radius: 8px; font-family: 'Poppins', sans-serif;">
-                <input type="email" placeholder="Your Email" required style="padding: 0.8rem; border: 2px solid var(--warm-beige); border-radius: 8px; font-family: 'Poppins', sans-serif;">
-                <input type="text" placeholder="Product Type" required style="padding: 0.8rem; border: 2px solid var(--warm-beige); border-radius: 8px; font-family: 'Poppins', sans-serif;">
-                <textarea placeholder="Your Message / Custom Requirements" rows="4" required style="padding: 0.8rem; border: 2px solid var(--warm-beige); border-radius: 8px; font-family: 'Poppins', sans-serif; resize: vertical;"></textarea>
-                <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message 📧</button>
-            </form>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <span class="feature-icon">✨</span>
+                    <h3>100% Handmade</h3>
+                    <p>Every piece is crafted with care and precision by skilled hands</p>
+                </div>
+                <div class="feature-card">
+                    <span class="feature-icon">🧶</span>
+                    <h3>Premium Materials</h3>
+                    <p>We use only the finest quality yarn and materials for durability</p>
+                </div>
+                <div class="feature-card">
+                    <span class="feature-icon">💝</span>
+                    <h3>Made with Love</h3>
+                    <p>Every stitch carries love, care, and attention to detail</p>
+                </div>
+                <div class="feature-card">
+                    <span class="feature-icon">🎁</span>
+                    <h3>Perfect for Gifting</h3>
+                    <p>Beautiful, meaningful gifts for every occasion and person</p>
+                </div>
+                <div class="feature-card">
+                    <span class="feature-icon">🌍</span>
+                    <h3>Deliver All Over Karachi</h3>
+                    <p>Fast and reliable delivery across Karachi</p>
+                </div>
+                <div class="feature-card">
+                    <span class="feature-icon">⭐</span>
+                    <h3>Custom Orders</h3>
+                    <p>Unique designs tailored to your preferences and dreams</p>
+                </div>
+            </div>
         </div>
-    </div>
+    </section>
 
-    <script>
-        // Collections Data
-        const collections = [
-            {
-                id: 1,
-                title: "Crochet Plushies",
-                price: "From Rs. 800",
-                image: "https://i.pinimg.com/736x/07/45/d4/0745d4105e13836de0e16665f3856b9a.jpg",
-                description: "Adorable handmade crochet plushies perfect for cuddling and collecting. Each plushie is crafted with love and filled with soft polyester fiber for ultimate comfort. Available in various sizes and designs.",
-                details: "• Handmade with premium yarn\n• Soft and huggable\n• Perfect for all ages\n• Available in custom colors\n• Hypoallergenic materials"
-            },
-            {
-                id: 2,
-                title: "Crochet Flowers",
-                price: "From Rs. 500",
-                image: "https://i.pinimg.com/736x/0b/b3/4a/0bb34a7614e5208a4f677bd2a8161de9.jpg",
-                description: "Beautiful handmade crochet flowers that never wilt. These botanical beauties add elegance to any space and make unforgettable gifts. Each flower is meticulously crafted with attention to detail.",
-                details: "• Permanent botanical beauty\n• Various flower varieties\n• Perfect for decoration\n• Long-lasting gift option\n• Customizable colors available"
-            },
-            {
-                id: 3,
-                title: "Crochet Keychains",
-                price: "From Rs. 250",
-                image: "https://i.pinimg.com/736x/84/33/a4/8433a49683f295c1b39c0e76e2c6a7a1.jpg",
-                description: "Tiny treasures on your keychain! Our adorable crochet keychains are perfect for personalizing your keys. Lightweight, durable, and absolutely charming.",
-                details: "• Portable and lightweight\n• Various cute designs\n• Durable crochet construction\n• Perfect for personalization\n• Great party favors"
-            },
-            {
-                id: 4,
-                title: "Custom Crochet Gifts",
-                price: "From Rs. 1,200",
-                image: "https://i.pinimg.com/736x/3d/f6/5e/3df65e117bf1ebb49bdcc3917413eca4.jpg",
-                description: "Bespoke crochet creations tailored to your imagination. We bring your dreams to life with custom colors, sizes, and designs. Perfect for memorable gift-giving.",
-                details: "• Fully customizable design\n• Your choice of colors\n• Special requests welcomed\n• Premium packaging included\n• Personal touch guaranteed"
-            },
-            {
-                id: 5,
-                title: "Seasonal Collections",
-                price: "From Rs. 600",
-                image: "https://i.pinimg.com/736x/0c/b1/22/0cb12297cc748c78a269b3091bb9c68c.jpg",
-                description: "Limited edition seasonal designs celebrating every occasion. From cozy winter items to summer delights, our seasonal collections offer unique pieces for every time of year.",
-                details: "• Limited edition designs\n• Seasonal themes\n• Exclusive collections\n• Perfect for celebrations\n• Gift-worthy packaging"
-            },
-            {
-                id: 6,
-                title: "Flower Bouquets",
-                price: "From Rs. 1,500",
-                image: "https://i.pinimg.com/736x/17/0d/ce/170dceac95d7d3421eea8126c3758749.jpg",
-                description: "Stunning crochet flower arrangements that capture the beauty of blooming gardens. These handmade bouquets are perfect for special occasions and make unforgettable keepsakes.",
-                details: "• Artfully arranged bouquets\n• Everlasting beauty\n• Perfect for gifting\n• Custom arrangements available\n• Premium presentation"
-            }
-        ];
+    <!-- Bloom & Cozy Collection Highlight -->
+    <section class="bloom-cozy-intro">
+        <div class="container">
+            <h2 class="section-title">✨ Bloom & Cozy Collection ✨</h2>
+            <p class="bloom-intro-text">
+                A celebration of handmade artistry, where every stitch carries a memory and every creation is crafted with love. Inspired by blooming gardens, warm afternoons, and treasured moments, this collection brings comfort, beauty, and joy into everyday life.
+            </p>
+            <p class="bloom-description">
+                Featuring crochet plushies, flower bouquets, keychains, mini animals, and decorative pieces in soft pastels—sage green, cream, lavender, blush pink, and warm gold. Each piece is a unique, gift-worthy treasure with cottagecore-inspired details.
+            </p>
+        </div>
+    </section>
 
-        // Generate Collections Grid
-        function generateCollections() {
-            const collectionsContainer = document.getElementById('collections');
-            collectionsContainer.innerHTML = collections.map(collection => `
-                <div class="collection-card" onclick="openCollectionModal(${collection.id})">
+    <!-- Collections Section -->
+    <section class="collections" id="collections">
+        <div class="container">
+            <h2 class="section-title">Our Collections</h2>
+            <div class="collections-grid">
+                <!-- Collection Card 1: Crochet Plushies -->
+                <div class="collection-card" onclick="openCollection('plushies')">
                     <div class="collection-image">
-                        <img src="${collection.image}" alt="${collection.title}">
+                        <img src="https://i.pinimg.com/736x/07/45/d4/0745d4105e13836de0e16665f3856b9a.jpg" alt="Crochet Plushies">
+                        <div class="collection-overlay">
+                            <span class="view-btn">View Collection</span>
+                        </div>
                     </div>
-                    <div class="collection-info">
-                        <h3>${collection.title}</h3>
-                        <p>${collection.description}</p>
-                        <div class="collection-footer">
-                            <span class="price">${collection.price}</span>
-                            <button class="view-btn" onclick="event.stopPropagation();">View</button>
+                    <h3 class="collection-title">Crochet Plushies</h3>
+                    <p class="collection-desc">Soft, cuddly handmade crochet plushies perfect for all ages</p>
+                    <p class="collection-price">Starting from <strong>Rs. 800</strong></p>
+                </div>
+
+                <!-- Collection Card 2: Crochet Flowers -->
+                <div class="collection-card" onclick="openCollection('flowers')">
+                    <div class="collection-image">
+                        <img src="https://i.pinimg.com/736x/0b/b3/4a/0bb34a7614e5208a4f677bd2a8161de9.jpg" alt="Crochet Flowers">
+                        <div class="collection-overlay">
+                            <span class="view-btn">View Collection</span>
+                        </div>
+                    </div>
+                    <h3 class="collection-title">Crochet Flowers</h3>
+                    <p class="collection-desc">Beautiful handmade crochet flowers that never fade</p>
+                    <p class="collection-price">Starting from <strong>Rs. 500</strong></p>
+                </div>
+
+                <!-- Collection Card 3: Crochet Keychains -->
+                <div class="collection-card" onclick="openCollection('keychains')">
+                    <div class="collection-image">
+                        <img src="https://i.pinimg.com/736x/84/33/a4/8433a49683f295c1b39c0e76e2c6a7a1.jpg" alt="Crochet Keychains">
+                        <div class="collection-overlay">
+                            <span class="view-btn">View Collection</span>
+                        </div>
+                    </div>
+                    <h3 class="collection-title">Crochet Keychains</h3>
+                    <p class="collection-desc">Tiny treasures to carry memories wherever you go</p>
+                    <p class="collection-price">Starting from <strong>Rs. 250</strong></p>
+                </div>
+
+                <!-- Collection Card 4: Custom Crochet Gifts -->
+                <div class="collection-card" onclick="openCollection('custom-gifts')">
+                    <div class="collection-image">
+                        <img src="https://i.pinimg.com/736x/3d/f6/5e/3df65e117bf1ebb49bdcc3917413eca4.jpg" alt="Custom Crochet Gifts">
+                        <div class="collection-overlay">
+                            <span class="view-btn">View Collection</span>
+                        </div>
+                    </div>
+                    <h3 class="collection-title">Custom Crochet Gifts</h3>
+                    <p class="collection-desc">Personalized creations made especially for you</p>
+                    <p class="collection-price">Starting from <strong>Rs. 1,200</strong></p>
+                </div>
+
+                <!-- Collection Card 5: Seasonal Collections -->
+                <div class="collection-card" onclick="openCollection('seasonal')">
+                    <div class="collection-image">
+                        <img src="https://i.pinimg.com/736x/0c/b1/22/0cb12297cc748c78a269b3091bb9c68c.jpg" alt="Seasonal Collections">
+                        <div class="collection-overlay">
+                            <span class="view-btn">View Collection</span>
+                        </div>
+                    </div>
+                    <h3 class="collection-title">Seasonal Collections</h3>
+                    <p class="collection-desc">Limited edition designs for every season</p>
+                    <p class="collection-price">Starting from <strong>Rs. 600</strong></p>
+                </div>
+
+                <!-- Collection Card 6: Flower Bouquets -->
+                <div class="collection-card" onclick="openCollection('bouquets')">
+                    <div class="collection-image">
+                        <img src="https://i.pinimg.com/736x/17/0d/ce/170dceac95d7d3421eea8126c3758749.jpg" alt="Flower Bouquets">
+                        <div class="collection-overlay">
+                            <span class="view-btn">View Collection</span>
+                        </div>
+                    </div>
+                    <h3 class="collection-title">Flower Bouquets</h3>
+                    <p class="collection-desc">Stunning crochet flower arrangements that last forever</p>
+                    <p class="collection-price">Starting from <strong>Rs. 1,500</strong></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Custom Orders Section -->
+    <section class="custom-orders" id="custom-orders">
+        <div class="container">
+            <h2 class="section-title">💝 Custom Orders</h2>
+            <p class="custom-intro">Looking for something unique? TwistHive offers custom crochet creations made especially for you.</p>
+            
+            <div class="custom-content">
+                <div class="custom-form-container">
+                    <h3>Request Your Custom Creation</h3>
+                    <p>Tell us what you envision, and we'll bring it to life with our crochet magic.</p>
+                    <form class="custom-form" id="customForm">
+                        <div class="form-group">
+                            <label for="productType">Product Type *</label>
+                            <select id="productType" required>
+                                <option value="">Select type...</option>
+                                <option value="plushie">Plushie</option>
+                                <option value="flowers">Flower Bouquet</option>
+                                <option value="keychain">Keychain</option>
+                                <option value="decoration">Decoration</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="colors">Preferred Colors *</label>
+                            <input type="text" id="colors" placeholder="e.g., sage green, cream, blush pink" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="size">Size Requirements *</label>
+                            <select id="size" required>
+                                <option value="">Select size...</option>
+                                <option value="small">Small (5-10cm)</option>
+                                <option value="medium">Medium (10-20cm)</option>
+                                <option value="large">Large (20cm+)</option>
+                                <option value="custom">Custom Size</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="details">Special Details</label>
+                            <textarea id="details" rows="4" placeholder="Any special details you'd like included..."></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Your Email *</label>
+                            <input type="email" id="email" placeholder="your@email.com" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Custom Request</button>
+                    </form>
+                </div>
+
+                <div class="why-choose">
+                    <h3>Why Choose TwistHive?</h3>
+                    <ul class="why-list">
+                        <li><span class="why-icon">🧶</span> Handmade with Care</li>
+                        <li><span class="why-icon">💝</span> Unique & Personalized</li>
+                        <li><span class="why-icon">⭐</span> Premium Quality Materials</li>
+                        <li><span class="why-icon">🎁</span> Perfect for Gifts</li>
+                        <li><span class="why-icon">✨</span> Crafted One Stitch at a Time</li>
+                        <li><span class="why-icon">💬</span> Direct Communication</li>
+                        <li><span class="why-icon">📦</span> Delivery Across Karachi</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2 class="section-title">🧶 Contact TwistHive</h2>
+            <p class="contact-intro">We'd love to hear from you!</p>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Get in Touch</h3>
+                    <p>Have a question, a custom crochet idea, or want to place an order? We're always excited to connect with fellow crochet lovers and help bring your ideas to life.</p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <span class="contact-icon">📧</span>
+                            <div>
+                                <strong>Email</strong>
+                                <p><a href="mailto:ayataftabrathore2010@gmail.com">ayataftabrathore2010@gmail.com</a></p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-icon">📸</span>
+                            <div>
+                                <strong>Instagram</strong>
+                                <p><a href="https://instagram.com/TwistHive" target="_blank">@TwistHive</a></p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-icon">📍</span>
+                            <div>
+                                <strong>Location</strong>
+                                <p>Karachi, Pakistan</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-            `).join('');
-        }
 
-        // Open Collection Modal
-        function openCollectionModal(id) {
-            const collection = collections.find(c => c.id === id);
-            const modalBody = document.getElementById('modalBody');
-            modalBody.innerHTML = `
-                <img src="${collection.image}" alt="${collection.title}" style="width: 100%; border-radius: 10px; margin-bottom: 1.5rem;">
-                <h2>${collection.title}</h2>
-                <p style="color: var(--light-text); margin-bottom: 1rem;">${collection.description}</p>
-                <div style="background: var(--cream); padding: 1.5rem; border-radius: 10px; margin-bottom: 1.5rem;">
-                    <h4 style="color: var(--soft-gold); margin-bottom: 0.8rem;">Product Details:</h4>
-                    <p style="color: var(--light-text); white-space: pre-line; line-height: 1.8;">${collection.details}</p>
+                <div class="contact-message">
+                    <h3>Quick Message</h3>
+                    <form class="message-form" id="contactForm">
+                        <div class="form-group">
+                            <input type="text" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea rows="5" placeholder="Your Message..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
                 </div>
-                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5rem;">
-                    <span style="font-size: 1.5rem; font-weight: 600; color: var(--soft-gold);">${collection.price}</span>
-                </div>
-                <button class="add-to-cart-btn" onclick="addToCart('${collection.title}')">Add to Order 🛒</button>
-            `;
-            document.getElementById('collectionModal').style.display = 'block';
-        }
+            </div>
+        </div>
+    </section>
 
-        // Add to Cart
-        function addToCart(productName) {
-            alert(`${productName} added to your order! 🎉\n\nPlease contact us via email or Instagram to complete your order.`);
-            document.getElementById('collectionModal').style.display = 'none';
-        }
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p class="footer-tagline">✨ Creating beautiful memories, one stitch at a time. ✨</p>
+            <p class="footer-quote">"Every stitch tells a story, and every creation carries a little piece of love." — TwistHive 🐝💛</p>
+            <p class="footer-copyright">&copy; 2026 TwistHive. All handmade creations are unique and one-of-a-kind.</p>
+        </div>
+    </footer>
 
-        // Close Modal when clicking outside
-        window.onclick = function(event) {
-            const collectionModal = document.getElementById('collectionModal');
-            const contactModal = document.getElementById('contactModal');
-            if (event.target === collectionModal) {
-                collectionModal.style.display = 'none';
-            }
-            if (event.target === contactModal) {
-                contactModal.style.display = 'none';
-            }
-        }
+    <!-- Collection Modal -->
+    <div id="collectionModal" class="modal">
+        <span class="close" onclick="closeCollection()">&times;</span>
+        <div class="modal-content">
+            <div id="modalBody"></div>
+        </div>
+    </div>
 
-        // Handle Contact Form
-        document.getElementById('contactForm').addEventListener('submit', function(e) {
-            e.preventDefault();
-            alert('Thank you for your message! We will get back to you soon. 💌\n\nPlease also reach out via email: ayataftabrathore@gmail.com');
-            this.reset();
-            document.getElementById('contactModal').style.display = 'none';
-        });
-
-        // Initialize
-        document.addEventListener('DOMContentLoaded', function() {
-            generateCollections();
-        });
-
-        // Smooth scroll for internal links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({ behavior: 'smooth' });
-                }
-            });
-        });
-    </script>
+    <script src="script.js"></script>
 </body>
-</html>
+</html><
