@@ -107,7 +107,53 @@ header{
 </head>
 
 <body>
+    <div class="cart" id="cart">
+    <h3>Your Cart</h3>
+    <div id="cartItems"></div>
 
+    <button onclick="checkout()" class="checkout">
+        Checkout on WhatsApp
+    </button>
+</div>
+
+<div class="cart-btn" onclick="toggleCart()">
+    🛒 Cart (<span id="cartCount">0</span>)
+</div>
+<script>
+
+let cart = [];
+
+function addToCart(item){
+    cart.push(item);
+    document.getElementById("cartCount").innerText = cart.length;
+
+    alert(item + " added to cart 🧶");
+}
+
+function toggleCart(){
+    let cartBox = document.getElementById("cart");
+
+    if(cartBox.style.display === "block"){
+        cartBox.style.display = "none";
+    } else {
+        cartBox.style.display = "block";
+    }
+
+    document.getElementById("cartItems").innerHTML =
+        cart.map(i => `<p>🧶 ${i}</p>`).join("");
+}
+
+function checkout(){
+    let message = "Hello! I want to order:%0A" + cart.join("%0A");
+
+    window.open(
+        "https://wa.me/92XXXXXXXXXX?text=" + message,
+        "_blank"
+    );
+}
+
+</script>    
+</body>
 <!-- ===== HEADER ===== -->
 <header>
     <div class="logo">🧶 TwistHive</div>
